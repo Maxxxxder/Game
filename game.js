@@ -16,12 +16,7 @@ var winningScore = 100;
 function addItems() {
   items = game.add.physicsGroup();
   createItem(375, 400, 'star');
-  createItem(650, 500, 'coin');
-  createItem(250, 150, 'coin');
-  createItem(450, 300, 'coin');
-  createItem(200, 200, 'coin');
-  createItem(150, 450, 'poison');
-
+  createItem(700, 550, 'coin');
 }
 
 // add platforms to the game
@@ -29,10 +24,10 @@ function addPlatforms() {
   platforms = game.add.physicsGroup();
   platforms.create(450, 550, 'platform2');
   platforms.create(650, 450, 'platform2');
-  platforms.create(150, 250, 'platform2');
-  platforms.create(450, 250, 'platform2');
-  platforms.create(250, 250, 'platform2');
-     platforms.setAll('body.immovable', true);
+  platforms.create(250, 350, 'platform2');
+  platforms.create(250, 175, 'platform');
+  platforms.create(100, 175, 'platform')
+    platforms.setAll('body.immovable', true);
 }
 
 // create a single animated item and add to screen
@@ -56,7 +51,7 @@ function itemHandler(player, item) {
   if (item.key === 'coin') {
      currentScore = currentScore + 10;
   } else if (item.key === 'poison') {
-     currentScore = currentScore - 15;
+     currentScore = currentScore - 25;
   } else if (item.key === 'star') {
      currentScore = currentScore + 25;
   }
