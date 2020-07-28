@@ -17,11 +17,11 @@ function addItems() {
   items = game.add.physicsGroup();
   createItem(600, 250, 'coin');
   createItem(375, 400, 'star');
-  createItem(600, 225, 'coin');
+  createItem(600, 300, 'coin');
   createItem(100, 25, 'coin');
-  createItem(650, 225, 'poison');
-  createItem(550, 125, 'poison');
-  createItem(400, 375, 'poison');
+  createItem(650, 200, 'poison');
+  createItem(550, 100, 'poison');
+  createItem(400, 350, 'poison');
 }
 
 // add platforms to the game
