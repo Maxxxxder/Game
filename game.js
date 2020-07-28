@@ -21,11 +21,11 @@ function addItems() {
   createItem(200, 100, 'coin');
   createItem(700, 550, 'coin');
   createItem(100, 500, 'poison');
-  createItem(300, 150, 'coin');
+  createItem(300, 100, 'coin');
   createItem(475, 530, 'poison');
   createItem(290, 400, 'poison');
-  createItem(675, 350, 'coin');
-  createItem(650, 350, 'poison');
+  createItem(675, 300, 'coin');
+  createItem(650, 300, 'poison');
 }
 
 // add platforms to the game
@@ -37,7 +37,7 @@ function addPlatforms() {
   platforms.create(450, 200, 'platform');
   platforms.create(100, 200, 'platform');
   platforms.create(275, 750, 'platform');
-  platforms.create(650, 350, 'platform2');
+  platforms.create(650, 300, 'platform2');
     platforms.setAll('body.immovable', true);
 }
 
